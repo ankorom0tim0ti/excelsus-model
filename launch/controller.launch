@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find excelsus_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="excelsus" args="RearLeftJoint2_position_controller RearLeftJoint1_position_controller RearLeftJoint0_position_controller FrontLeftJoint2_position_controller FrontLeftJoint1_position_controller FrontLeftJoint0_position_controller FrontRightJoint2_position_controller FrontRightJoint1_position_controller FrontRightJoint0_position_controller RearRightJoint2_position_controller RearRightJoint1_position_controller RearRightJoint0_position_controller RearLeftJoint4_position_controller RearLeftJoint3_position_controller FrontLeftJoint4_position_controller FrontLeftJoint3_position_controller FrontRightJoint4_position_controller FrontRightJoint3_position_controller RearRightJoint4_position_controller RearRightJoint3_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/excelsus/joint_states"/>
+</node>
+
+</launch>

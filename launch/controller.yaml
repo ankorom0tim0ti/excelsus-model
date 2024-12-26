@@ -1,0 +1,87 @@
+excelsus:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  RearLeftJoint2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RearLeftJoint2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RearLeftJoint1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RearLeftJoint1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RearLeftJoint0_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RearLeftJoint0
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FrontLeftJoint2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FrontLeftJoint2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FrontLeftJoint1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FrontLeftJoint1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FrontLeftJoint0_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FrontLeftJoint0
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FrontRightJoint2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FrontRightJoint2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FrontRightJoint1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FrontRightJoint1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FrontRightJoint0_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FrontRightJoint0
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RearRightJoint2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RearRightJoint2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RearRightJoint1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RearRightJoint1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RearRightJoint0_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RearRightJoint0
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RearLeftJoint4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RearLeftJoint4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RearLeftJoint3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RearLeftJoint3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FrontLeftJoint4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FrontLeftJoint4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FrontLeftJoint3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FrontLeftJoint3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FrontRightJoint4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FrontRightJoint4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FrontRightJoint3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: FrontRightJoint3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RearRightJoint4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RearRightJoint4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RearRightJoint3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RearRightJoint3
+    pid: {p: 100.0, i: 0.01, d: 10.0}

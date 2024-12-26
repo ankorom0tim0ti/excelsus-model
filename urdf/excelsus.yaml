@@ -1,0 +1,47 @@
+front-left-leg:
+ - FrontLeftJoint0 : front-left-joint-0
+ - FrontLeftJoint1 : front-left-joint-1
+ - FrontLeftJoint2 : front-left-joint-2
+ - FrontLeftJoint3 : front-left-joint-3
+ - FrontLeftJoint4 : front-left-joint-4
+
+front-left-leg-end-coords:
+  translate : [0.0, 0.0, 0.0]
+  rotate : [1.0, 0.0, 0.0, 0.0]
+  parent : front-left-craw_1
+
+front-right-leg:
+ - FrontRightJoint0 : front-right-joint-0
+ - FrontRightJoint1 : front-right-joint-1
+ - FrontRightJoint2 : front-right-joint-2
+ - FrontRightJoint3 : front-right-joint-3
+ - FrontRightJoint4 : front-right-joint-4
+
+front-right-leg-end-coords:
+  translate : [0.0, 0.0, 0.0]
+  rotate : [1.0, 0.0, 0.0, 0.0]
+  parent : front-right-craw_1
+
+rear-left-leg:
+ - RearLeftJoint0 : rear-left-joint-0
+ - RearLeftJoint1 : rear-left-joint-1
+ - RearLeftJoint2 : rear-left-joint-2
+ - RearLeftJoint3 : rear-left-joint-3
+ - RearLeftJoint4 : rear-left-joint-4
+
+rear-left-leg-end-coords:
+  translate : [0.0, 0.0, 0.0]
+  rotate : [1.0, 0.0, 0.0, 0.0]
+  parent : rear-left-craw_1
+
+rear-right-leg:
+ - RearRightJoint0 : rear-right-joint-0
+ - RearRightJoint1 : rear-right-joint-1
+ - RearRightJoint2 : rear-right-joint-2
+ - RearRightJoint3 : rear-right-joint-3
+ - RearRightJoint4 : rear-right-joint-4
+
+rear-right-leg-end-coords:
+  translate : [0.0, 0.0, 0.0]
+  rotate : [1.0, 0.0, 0.0, 0.0]
+  parent : rear-right-craw_1

@@ -1,0 +1,588 @@
+<?xml version="1.0" ?>
+<robot name="excelsus" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find excelsus_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find excelsus_description)/urdf/excelsus.trans" />
+<xacro:include filename="$(find excelsus_description)/urdf/excelsus.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-5.030033392761689e-17 -0.00029569010956729944 -0.0007681503352656508" rpy="0 0 0"/>
+    <mass value="1.125665971469736"/>
+    <inertia ixx="0.001968" iyy="0.002703" izz="0.004398" ixy="-3e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque246246243"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rear-left-middle-leg_1">
+  <inertial>
+    <origin xyz="0.03662487154399953 -0.014211363327568671 -0.0346386088514269" rpy="0 0 0"/>
+    <mass value="0.4219440312643297"/>
+    <inertia ixx="0.000366" iyy="0.000391" izz="9.8e-05" ixy="1e-06" iyz="-0.0" ixz="8.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1115 -0.056904 -0.051877" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-left-middle-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque246246243"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1115 -0.056904 -0.051877" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-left-middle-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rear-left-upper-leg_1">
+  <inertial>
+    <origin xyz="6.523326043211819e-05 -0.014144819518955569 0.03686031239871101" rpy="0 0 0"/>
+    <mass value="0.24064580815886535"/>
+    <inertia ixx="8.2e-05" iyy="7.3e-05" izz="3.4e-05" ixy="0.0" iyz="1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1115 -0.057204 0.001123" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-left-upper-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1115 -0.057204 0.001123" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-left-upper-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rear-left-base-leg_1">
+  <inertial>
+    <origin xyz="0.03316988831276137 7.009790016201944e-05 -0.014273316157971089" rpy="0 0 0"/>
+    <mass value="0.22271760560239287"/>
+    <inertia ixx="3.1e-05" iyy="6.2e-05" izz="5.9e-05" ixy="0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0645 -0.043204 -0.013177" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-left-base-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0645 -0.043204 -0.013177" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-left-base-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front-left-middle-leg_1">
+  <inertial>
+    <origin xyz="0.03662487154399953 0.014088636672431903 -0.03463860885142715" rpy="0 0 0"/>
+    <mass value="0.4219440312643297"/>
+    <inertia ixx="0.000366" iyy="0.000391" izz="9.8e-05" ixy="1e-06" iyz="-0.0" ixz="8.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1115 0.057796 -0.051877" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-left-middle-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque246246243"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1115 0.057796 -0.051877" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-left-middle-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front-left-upper-leg_1">
+  <inertial>
+    <origin xyz="6.523326045146383e-05 0.014155180480418326 0.036860312398532415" rpy="0 0 0"/>
+    <mass value="0.2406458081588655"/>
+    <inertia ixx="8.2e-05" iyy="7.3e-05" izz="3.4e-05" ixy="0.0" iyz="1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1115 0.057796 0.001123" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-left-upper-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1115 0.057796 0.001123" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-left-upper-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front-left-base-leg_1">
+  <inertial>
+    <origin xyz="0.03316988831276123 7.009790016202638e-05 -0.014273316157970225" rpy="0 0 0"/>
+    <mass value="0.2227176056023929"/>
+    <inertia ixx="3.1e-05" iyy="6.2e-05" izz="5.9e-05" ixy="0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0645 0.043796 -0.013177" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-left-base-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0645 0.043796 -0.013177" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-left-base-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front-right-middle-leg_1">
+  <inertial>
+    <origin xyz="-0.036624871543999224 0.014211983108469377 -0.03463860885142524" rpy="0 0 0"/>
+    <mass value="0.4219440312643297"/>
+    <inertia ixx="0.000366" iyy="0.000391" izz="9.8e-05" ixy="1e-06" iyz="0.0" ixz="-8.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1115 0.057496 -0.051877" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-right-middle-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque246246243"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1115 0.057496 -0.051877" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-right-middle-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front-right-upper-leg_1">
+  <inertial>
+    <origin xyz="-6.523326043220146e-05 0.014145439299855359 0.03686031239871269" rpy="0 0 0"/>
+    <mass value="0.24064580815886535"/>
+    <inertia ixx="8.2e-05" iyy="7.3e-05" izz="3.4e-05" ixy="0.0" iyz="-1e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1115 0.057796 0.001123" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-right-upper-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1115 0.057796 0.001123" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-right-upper-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front-right-base-leg_1">
+  <inertial>
+    <origin xyz="-0.033169888312761464 -6.947811926222985e-05 -0.014273316157969668" rpy="0 0 0"/>
+    <mass value="0.22271760560239287"/>
+    <inertia ixx="3.1e-05" iyy="6.2e-05" izz="5.9e-05" ixy="0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0645 0.043796 -0.013177" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-right-base-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0645 0.043796 -0.013177" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-right-base-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rear-right-middle-leg_1">
+  <inertial>
+    <origin xyz="-0.03662487154399986 -0.014088016891530546 -0.034638608851427076" rpy="0 0 0"/>
+    <mass value="0.4219440312643297"/>
+    <inertia ixx="0.000366" iyy="0.000391" izz="9.8e-05" ixy="1e-06" iyz="0.0" ixz="-8.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1115 -0.057204 -0.051877" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-right-middle-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque246246243"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1115 -0.057204 -0.051877" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-right-middle-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rear-right-upper-leg_1">
+  <inertial>
+    <origin xyz="-6.523326043235411e-05 -0.014154560700144606 0.03686031239871122" rpy="0 0 0"/>
+    <mass value="0.24064580815886538"/>
+    <inertia ixx="8.2e-05" iyy="7.3e-05" izz="3.4e-05" ixy="0.0" iyz="-1e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1115 -0.057204 0.001123" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-right-upper-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1115 -0.057204 0.001123" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-right-upper-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rear-right-base-leg_1">
+  <inertial>
+    <origin xyz="-0.033169888312761284 -6.947811926216046e-05 -0.014273316157970999" rpy="0 0 0"/>
+    <mass value="0.2227176056023929"/>
+    <inertia ixx="3.1e-05" iyy="6.2e-05" izz="5.9e-05" ixy="0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0645 -0.043204 -0.013177" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-right-base-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0645 -0.043204 -0.013177" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-right-base-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rear-left-craw_1">
+  <inertial>
+    <origin xyz="-2.3946243918326893e-06 3.0989044990520354e-07 -0.0021710475035774945" rpy="0 0 0"/>
+    <mass value="0.0032125334253544006"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.153864 -0.052804 0.071568" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-left-craw_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.153864 -0.052804 0.071568" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-left-craw_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rear-left-lower-leg_1">
+  <inertial>
+    <origin xyz="-5.1416892328209896e-05 -0.011888882526507272 -0.032619644830111594" rpy="0 0 0"/>
+    <mass value="0.2261109161031503"/>
+    <inertia ixx="6.2e-05" iyy="5e-05" izz="3.5e-05" ixy="0.0" iyz="3e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.154 -0.056604 0.018623" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-left-lower-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.154 -0.056604 0.018623" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-left-lower-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front-left-craw_1">
+  <inertial>
+    <origin xyz="2.1245051555485173e-06 3.098904506060318e-07 -0.0021710027440375868" rpy="0 0 0"/>
+    <mass value="0.0032125334253544006"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.153864 0.054596 0.071678" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-left-craw_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.153864 0.054596 0.071678" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-left-craw_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front-left-lower-leg_1">
+  <inertial>
+    <origin xyz="-0.00019048025029058668 -0.01651832705013496 -0.032699923981751075" rpy="0 0 0"/>
+    <mass value="0.22611091610315037"/>
+    <inertia ixx="6.3e-05" iyy="5e-05" izz="3.5e-05" ixy="-0.0" iyz="-4e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.154 0.029796 0.018623" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-left-lower-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.154 0.029796 0.018623" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-left-lower-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front-right-craw_1">
+  <inertial>
+    <origin xyz="-2.412367960169526e-06 3.098904509946099e-07 -0.002171047503575649" rpy="0 0 0"/>
+    <mass value="0.0032125334253544006"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.153864 0.053396 0.071568" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-right-craw_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="0.153864 0.053396 0.071568" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-right-craw_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front-right-lower-leg_1">
+  <inertial>
+    <origin xyz="5.1416892328154384e-05 0.011889502307408178 -0.03261964483010979" rpy="0 0 0"/>
+    <mass value="0.22611091610315034"/>
+    <inertia ixx="6.2e-05" iyy="5e-05" izz="3.5e-05" ixy="0.0" iyz="-3e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.154 0.057196 0.018623" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-right-lower-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="0.154 0.057196 0.018623" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/front-right-lower-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rear-right-craw_1">
+  <inertial>
+    <origin xyz="-2.1245051574914076e-06 3.0989045091134315e-07 -0.002171002744037351" rpy="0 0 0"/>
+    <mass value="0.0032125334253544006"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.153864 -0.054004 0.071678" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-right-craw_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="0.153864 -0.054004 0.071678" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-right-craw_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rear-right-lower-leg_1">
+  <inertial>
+    <origin xyz="0.0001904802502888936 0.016518946831036524 -0.032699923981750895" rpy="0 0 0"/>
+    <mass value="0.22611091610315037"/>
+    <inertia ixx="6.3e-05" iyy="5e-05" izz="3.5e-05" ixy="-0.0" iyz="4e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.154 -0.029204 0.018623" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-right-lower-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="epx_150_air_baked_with_carbon_m2_m3_l1_3d_printers"/>
+  </visual>
+  <collision>
+    <origin xyz="0.154 -0.029204 0.018623" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://excelsus_description/meshes/rear-right-lower-leg_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="RearLeftJoint2" type="continuous">
+  <origin xyz="0.0 -0.0003 0.053" rpy="0 0 0"/>
+  <parent link="rear-left-upper-leg_1"/>
+  <child link="rear-left-middle-leg_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="RearLeftJoint1" type="continuous">
+  <origin xyz="0.047 0.014 -0.0143" rpy="0 0 0"/>
+  <parent link="rear-left-base-leg_1"/>
+  <child link="rear-left-upper-leg_1"/>
+  <axis xyz="0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="RearLeftJoint0" type="continuous">
+  <origin xyz="0.0645 0.043204 0.013177" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="rear-left-base-leg_1"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="FrontLeftJoint2" type="continuous">
+  <origin xyz="0.0 0.0 0.053" rpy="0 0 0"/>
+  <parent link="front-left-upper-leg_1"/>
+  <child link="front-left-middle-leg_1"/>
+  <axis xyz="0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="FrontLeftJoint1" type="continuous">
+  <origin xyz="0.047 -0.014 -0.0143" rpy="0 0 0"/>
+  <parent link="front-left-base-leg_1"/>
+  <child link="front-left-upper-leg_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="FrontLeftJoint0" type="continuous">
+  <origin xyz="0.0645 -0.043796 0.013177" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="front-left-base-leg_1"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="FrontRightJoint2" type="continuous">
+  <origin xyz="0.0 0.0003 0.053" rpy="0 0 0"/>
+  <parent link="front-right-upper-leg_1"/>
+  <child link="front-right-middle-leg_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="FrontRightJoint1" type="continuous">
+  <origin xyz="-0.047 -0.014 -0.0143" rpy="0 0 0"/>
+  <parent link="front-right-base-leg_1"/>
+  <child link="front-right-upper-leg_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="FrontRightJoint0" type="continuous">
+  <origin xyz="-0.0645 -0.043796 0.013177" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="front-right-base-leg_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="RearRightJoint2" type="continuous">
+  <origin xyz="0.0 0.0 0.053" rpy="0 0 0"/>
+  <parent link="rear-right-upper-leg_1"/>
+  <child link="rear-right-middle-leg_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="RearRightJoint1" type="continuous">
+  <origin xyz="-0.047 0.014 -0.0143" rpy="0 0 0"/>
+  <parent link="rear-right-base-leg_1"/>
+  <child link="rear-right-upper-leg_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="RearRightJoint0" type="continuous">
+  <origin xyz="-0.0645 0.043204 0.013177" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="rear-right-base-leg_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="RearLeftJoint4" type="continuous">
+  <origin xyz="-0.000136 -0.0038 -0.052945" rpy="0 0 0"/>
+  <parent link="rear-left-lower-leg_1"/>
+  <child link="rear-left-craw_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="RearLeftJoint3" type="continuous">
+  <origin xyz="0.0425 -0.0003 -0.0705" rpy="0 0 0"/>
+  <parent link="rear-left-middle-leg_1"/>
+  <child link="rear-left-lower-leg_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="FrontLeftJoint4" type="continuous">
+  <origin xyz="-0.000136 -0.0248 -0.053055" rpy="0 0 0"/>
+  <parent link="front-left-lower-leg_1"/>
+  <child link="front-left-craw_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="FrontLeftJoint3" type="continuous">
+  <origin xyz="0.0425 0.028 -0.0705" rpy="0 0 0"/>
+  <parent link="front-left-middle-leg_1"/>
+  <child link="front-left-lower-leg_1"/>
+  <axis xyz="0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="FrontRightJoint4" type="continuous">
+  <origin xyz="0.000136 0.0038 -0.052945" rpy="0 0 0"/>
+  <parent link="front-right-lower-leg_1"/>
+  <child link="front-right-craw_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="FrontRightJoint3" type="continuous">
+  <origin xyz="-0.0425 0.0003 -0.0705" rpy="0 0 0"/>
+  <parent link="front-right-middle-leg_1"/>
+  <child link="front-right-lower-leg_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="RearRightJoint4" type="continuous">
+  <origin xyz="0.000136 0.0248 -0.053055" rpy="0 0 0"/>
+  <parent link="rear-right-lower-leg_1"/>
+  <child link="rear-right-craw_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="RearRightJoint3" type="continuous">
+  <origin xyz="-0.0425 -0.028 -0.0705" rpy="0 0 0"/>
+  <parent link="rear-right-middle-leg_1"/>
+  <child link="rear-right-lower-leg_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+</robot>
