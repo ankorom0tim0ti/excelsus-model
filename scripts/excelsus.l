@@ -48,7 +48,7 @@
 (defun excelsus-init (&key
                    (namespace nil)
                    (without-ri nil)
-                   (create-viewer t)
+                   (create-viewer nil)
                    (controller-name "fullbody_controller"))
   (unless (boundp '*excelsus*)
     (setq *excelsus* (excelsus)))
